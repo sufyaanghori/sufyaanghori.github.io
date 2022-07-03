@@ -1,146 +1,34 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Sufyaan Ghori's Portfolio</title>
-     <link rel="stylesheet" href="style.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bbbf99c10e.js" crossorigin="anonymous"></script>
- </head>
+    <title>ToDo List</title>
+</head>
+<body>
 
- <body>
-    <div id="navbar-div">
-        <a class="navbar-link" href="works.html">Works</a>
-        <a class="navbar-link" href="blog.html">Blog</a>
-        <a class="navbar-link" href="contact.html">Contact</a>
+    <div id="background">
+        <p class="header">T O D O</p>
+        <form name="myform">
+            <input type="text" name="input" class="header" placeholder="Add Task">
+            <button type="submit" class="header"> <i class="fa-solid fa-plus"></i> </button>
+        </form>
+        <img src="bg-desktop-dark.jpg">
     </div>
 
-    <div id="intro">
-        <div id="intro-left-col">
-            <h1>About Me</h1>
-            <p>Hello, this is Sufyaan, an undergradute from the Lahore University of
-            Management Science.</p>
-            <a href="resume.txt">
-                <button>Download Resume</button>
-            </a>
-        </div>
-        <div id="intro-right-col">
-            <img src="dp.png" class="dp">
-        </div>
+    <div id="tasks">
+        <ul id="tasklist">         
+        </ul>
     </div>
 
-    <section id="blog-post">
-
-        <div id="recent-post">
-            <h4 class="my-h4">Recent posts</h4>
-            <a href="blog.html">View All</a>
-        </div>
-
-        <div id="card-parent">
-
-            <div class="card">
-                <h2 class="my-h2">Entering the Ecommerce world</h2>
-    
-                <span>21 March 2021</span>
-                <span> | </span>
-                <span>Lahore, Pakistan</span>
-    
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Distinctio nesciunt incidunt voluptatum suscipit reprehenderit quidem, 
-                officia tenetur. Dignissimos, quae nostrum sequi commodi sunt voluptas.</p>
-    
-            </div>
-
-            <div class="card">
-                <h2 class="my-h2">Bringing the Machine Learning industry in Pakistan</h2>
-    
-                <span>09 September 2021</span>
-                <span> | </span>
-                <span>Karachi, Pakistan</span>
-    
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Distinctio nesciunt incidunt voluptatum suscipit reprehenderit quidem, 
-                officia tenetur. Dignissimos, quae nostrum sequi commodi sunt voluptas.</p>
-    
-            </div>
-    
-        </div>
-
-    </section>
-
-    <section class="featured-works">
-        <h4 class="my-h4">Featured Works</h4>
-        
-        <div class="horizontal-card">
-            <img src="https://random.imagecdn.app/230/190" alt="">
-            <div>
-                <h2 class="my-h2">Shopify Stores</h2>
-                <span class="pill">2022</span>
-                <span class="text">Dashboard</span>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Distinctio nesciunt incidunt voluptatum suscipit reprehenderit quidem, 
-                officia tenetur. Dignissimos, quae nostrum sequi commodi sunt voluptas.</p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="horizontal-card">
-            <img src="https://random.imagecdn.app/230/191" alt="">
-            <div>
-                <h2 class="my-h2">Programming Projects</h2>
-                <span class="pill">2020</span>
-                <span class="text">Dashboard</span>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Distinctio nesciunt incidunt voluptatum suscipit reprehenderit quidem, 
-                officia tenetur. Dignissimos, quae nostrum sequi commodi sunt voluptas.</p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="horizontal-card">
-            <img src="https://random.imagecdn.app/230/189" alt="">
-            <div>
-                <h2 class="my-h2">Event Management</h2>
-                <span class="pill">2019</span>
-                <span class="text">Dashboard</span>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Distinctio nesciunt incidunt voluptatum suscipit reprehenderit quidem, 
-                officia tenetur. Dignissimos, quae nostrum sequi commodi sunt voluptas.</p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-    </section>
-
-    <section id="social-media">
-        <a href="https://www.facebook.com/profile.php?id=100001267228784">
-            <i class="fa-brands fa-facebook-square"></i>
-        </a>
-        <a href="https://www.instagram.com/khansufyaann/">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/sufyaanghori">
-            <i class="fa-brands fa-twitter-square"></i>
-        </a>
-    </section>
-
-    <p id="copyright">Copyright 2022 Sufyaan Ghori</p>
-
- </body>
- </html>
+    <script src="code.js"></script>
+</body>
+</html>
